@@ -1,6 +1,13 @@
-import Unittest
-class TestApp(Unittest.TestCase):
-def test_addition(self):
-self.assertEqual(10+20,30)
-if __name__ == "__main__":
-Unitest.main()
+class TestApp:
+
+    def test_addition(self):
+        assert 2 + 3 == 5
+
+    def test_subtraction(self):
+        assert 5 - 2 == 3
+
+test = TestApp()
+test.test_addition()
+test.test_subtraction()
+
+print("All tests passed successfully!")
